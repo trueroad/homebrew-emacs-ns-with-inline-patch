@@ -1,6 +1,6 @@
 cask "emacs-ns-with-inline-patch" do
-  version "30.2_apple"
-  sha256 "5a973afed578851e882fbb97b9126ccee0ed3dffc78180042a54b061d44a9e4e"
+  version "31.1_apple"
+  sha256 "817b8215725c707a3c2c533cd1f3726861bea337d2ebe5854ec327e561baa894"
 
   url "https://pxaka.tokyo/emacs/pkg/emacs-#{version}.pkg",
       verified: "pxaka.tokyo"
@@ -14,11 +14,9 @@ cask "emacs-ns-with-inline-patch" do
   uninstall pkgutil: "com.takaxp.emacs"
 
   # binary "#{appdir}/Emacs-takaxp/Emacs.app/Contents/MacOS/Emacs", target: "emacs"
-  binary "#{appdir}/Emacs-takaxp/Emacs.app/Contents/MacOS/bin/ctags"
   binary "#{appdir}/Emacs-takaxp/Emacs.app/Contents/MacOS/bin/ebrowse"
   binary "#{appdir}/Emacs-takaxp/Emacs.app/Contents/MacOS/bin/emacsclient"
   binary "#{appdir}/Emacs-takaxp/Emacs.app/Contents/MacOS/bin/etags"
-  manpage "#{appdir}/Emacs-takaxp/Emacs.app/Contents/Resources/man/man1/ctags.1.gz"
   manpage "#{appdir}/Emacs-takaxp/Emacs.app/Contents/Resources/man/man1/ebrowse.1.gz"
   manpage "#{appdir}/Emacs-takaxp/Emacs.app/Contents/Resources/man/man1/emacs.1.gz"
   manpage "#{appdir}/Emacs-takaxp/Emacs.app/Contents/Resources/man/man1/emacsclient.1.gz"
